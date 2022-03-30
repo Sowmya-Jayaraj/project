@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+:root {
+  --containerWH: 50em;
+  --carouselContainerWH: 36em;
+  --mainImgWH: 36em;
+  --mImgWH: 32em;
+  --usersWH: 5em;
+  --btnWH: 3em;
+  --btniconWH: 2.2em;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-size: 62.5%;
+  font-family: "Klee One", cursive;
+
+  background: #ffff97;
+  color: #000;
+
+  display: grid;
+  place-items: center;
+  user-select: none;
+}
+
+.container {
+  width: var(--containerWH);
+  height: var(--containerWH);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.carouselContainer {
+  width: var(--carouselContainerWH);
+  height: var(--carouselContainerWH);
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  gap: 7em;
+
+  position: relative;
+}
+
+.mainImg {
+  width: var(--mainImgWH);
+  height: var(--mainImgWH);
+  border: 3px solid #585800;
+  border-radius: 50%;
+
+  display: grid;
+  place-items: center;
+}
+.mainImg img {
+  width: var(--mImgWH);
+  height: var(--mImgWH);
+  border-radius: 50%;
+}
+.users img {
+  position: absolute;
+  bottom: 80%;
+  left: 10%;
+  width: var(--usersWH);
+  height: var(--usersWH);
+  border-radius: 50%;
+  border: 2px solid #585800;
+}
+.user1 {
+  position: absolute;
+  top: 20%;
+  left: 0;
+}
+.user2 {
+  position: absolute;
+  left: 0%;
+  bottom: -1%;
+}
+.user3 {
+  position: absolute;
+  bottom: 10%;
+  right: -10%;
+}
+.user4 {
+  position: absolute;
+  top: 5%;
+  right: -10%;
+}
+
+.feedback {
+  width: 14em;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 6px 12px #69690033;
+  font-size: 1.2em;
+  padding: 1.2em 0.3em;
+  border-radius: 0.5em;
+}
+/* Arrow */
+.btn {
+  cursor: pointer;
+  background: #fff;
+  border: none;
+  width: var(--btnWH);
+  height: var(--btnWH);
+  border-radius: 50%;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  position: absolute;
+
+  display: grid;
+  place-items: center;
+}
+
+.btn-icon {
+  width: var(--btniconWH);
+  height: var(--btniconWH);
+  stroke: #585800;
+}
+
+.prev {
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.next {
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  background: #e0e0e0;
+}
+
+@media (max-width: 500px) {
+  :root {
+    --containerWH: 40em;
+    --carouselContainerWH: 26em;
+    --mainImgWH: 26em;
+    --mImgWH: 22em;
+    --usersWH: 4em;
+    --btnWH: 2.2em;
+    --btniconWH: 2em;
+  }
+
+  .feedback {
+    font-size: 0.8em;
+  }
+}

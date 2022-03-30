@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="carousel.css" />
+    <title>Carousel</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="carouselContainer">
+        <!-- <div class="carousel">
+        <div class="mainImg">
+          <img
+            src="https://raw.githubusercontent.com/rishikumarr/images/main/plant-images/cactus-1.jpg"
+            alt=""
+          />
+        </div>
+        <div class="users">
+          <div class="user1">
+            <img
+              src="https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-1.png"
+              alt="user1"
+            />
+            <p class="feedback">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="user2">
+            <img
+              src="https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-4.png"
+              alt="user2"
+            />
+            <p class="feedback">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="user3">
+            <img
+              src="https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-2.png"
+              alt="user3"
+            />
+            <p class="feedback">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <div class="user4">
+            <img
+              src="https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-5.png"
+              alt="user4"
+            />
+            <p class="feedback">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+        </div>
+      </div> -->
+        <button class="btn prev" disabled>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="btn-icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+        </button>
+
+        <button class="btn next">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="btn-icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </body>
+  <script>
+    "use strict";
+
+    const prev = document.querySelector(".prev");
+    const next = document.querySelector(".next");
+
+    prev.addEventListener("click", previousCarousel);
+    next.addEventListener("click", nextCarousel);
+
+    let data = {};
+
+    let currentCarousel = 0;
+
+    const carousels = [
+      {
+        mainImg:
+          "https://raw.githubusercontent.com/rishikumarr/images/main/plant-images/cactus-1.jpg",
+
+        user1:
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-1.png",
+        user2:
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-4.png",
+        user3:
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-2.png",
+        user4:
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-5.png",
+      },
+      {
+        mainImg:
+          "https://raw.githubusercontent.com/rishikumarr/images/main/plant-images/watery-plant.jpg",
+
+        user1:
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-3.png",
+        user2:
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-6.png",
+        user3:
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-two/asset-1.png",
+        user4:
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-two/asset-4.png",
+      },
+      {
+        mainImg:
+          "https://raw.githubusercontent.com/rishikumarr/images/main/plant-images/alovera.jpg",
+
+        user1:
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-two/asset-2.png",
+        user2:
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-two/asset-6.png",
+        user3:
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-two/asset-3.png",
+        user4:
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-three/asset-4.png",
+      },
+    ];
+
+    const carouselDiv = document.querySelector(".carouselContainer");
+
+    carousels.forEach((carousel, index) => {
+      const { mainImg, user1, user2, user3, user4 } = carousel;
+      data[index] = { mainImg, user1, user2, user3, user4 };
+
+      const DOM = `
+      <div class="carousel">
+          <div class="mainImg">
+            <img
+              src="${mainImg}"
+              alt=""
+            />
+          </div>
+          <div class="users">
+            <div class="user1">
+              <img
+                src="${user1}"
+                alt="user1"
+              />
+              <p class="feedback">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="user2">
+              <img
+                src="${user2}"
+                alt="user2"
+              />
+              <p class="feedback">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="user3">
+              <img
+                src="${user3}"
+                alt="user3"
+              />
+              <p class="feedback">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+            <div class="user4">
+              <img
+                src="${user4}"
+              />
+              <p class="feedback">Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+          </div>
+        </div>`;
+
+      carouselDiv.insertAdjacentHTML("afterbegin", DOM);
+    });
+
+    function updateArrow() {
+      const carousels = document.querySelectorAll(".carousel");
+
+      if (currentCarousel === 0) {
+        prev.disabled = true;
+      } else if (currentCarousel === carousels.length - 1) {
+        next.disabled = true;
+      } else {
+        prev.disabled = false;
+        next.disabled = false;
+      }
+    }
+
+    function updateImage() {
+      const mainImg = document.querySelector(".mainImg img");
+      mainImg.src = data[currentCarousel]["mainImg"];
+
+      const user1 = document.querySelector(".user1 img");
+      user1.src = data[currentCarousel]["user1"];
+      const user2 = document.querySelector(".user2 img");
+      user2.src = data[currentCarousel]["user2"];
+      const user3 = document.querySelector(".user3 img");
+      user3.src = data[currentCarousel]["user3"];
+      const user4 = document.querySelector(".user4 img");
+      user4.src = data[currentCarousel]["user4"];
+    }
+
+    function previousCarousel() {
+      currentCarousel--;
+      updateArrow();
+      updateImage();
+    }
+
+    function nextCarousel() {
+      currentCarousel++;
+      updateArrow();
+      updateImage();
+    }
+  </script>
+</html>
