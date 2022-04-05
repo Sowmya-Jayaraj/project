@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="layout.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Plants</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1 class="title">Plants <i class="fa-solid fa-seedling"></i></h1>
+      </div>
+
+      <ul class="navigation">
+        <li class="navLink active" data-navigateTo="home">Home</li>
+        <li class="navLink" data-navigateTo="plants">Plants</li>
+        <li class="navLink" data-navigateTo="about">About</li>
+        <li class="navLink" data-navigateTo="testimonials">Testimonials</li>
+      </ul>
+    </header>
+    <div class="container container1" id="home">
+      <main>
+        <div class="contentContainer fontWhite">
+          <p class="content">
+            Lorem ipsum dolor sit amet. Repellendus nemo possimus modi nam?
+            Voluptates neque obcaecati totam.
+          </p>
+          <button class="mainBtn">Explore</button>
+        </div>
+        <div class="carouselContainer">
+          <div class="carousel">
+            <div class="mainImg">
+              <img
+                class="main-img"
+                src="https://raw.githubusercontent.com/rishikumarr/images/main/plant-images/alovera.jpg"
+                alt=""
+              />
+            </div>
+            <div class="users">
+              <div class="user user1">
+                <img
+                  class="user-img"
+                  src="https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-1.png"
+                  alt="user1"
+                />
+                <p class="feedback">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="user user2">
+                <img
+                  class="user-img"
+                  src="https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-4.png"
+                  alt="user2"
+                />
+                <p class="feedback">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="user user3">
+                <img
+                  class="user-img"
+                  src="https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-2.png"
+                  alt="user3"
+                />
+                <p class="feedback">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+              </div>
+              <div class="user user4">
+                <img
+                  class="user-img"
+                  src="https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-5.png"
+                  alt="user4"
+                />
+                <p class="feedback">Lorem ipsum dolor sit amet consectetur.</p>
+              </div>
+            </div>
+          </div>
+          <button class="btn prev" disabled>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="btn-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+
+          <button class="btn next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="btn-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+        </div>
+      </main>
+    </div>
+    <div class="container">
+      <div class="plantContainer" id="plants">
+        <div>
+          <h2><a href="">Plants</a></h2>
+        </div>
+        <div class="allplants">
+          <div class="plants">
+            <img
+              src="https://images.unsplash.com/photo-1609061800916-894a886af7fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fHBsYW50JTIwcG90fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="Common houseleek"
+              title="Common houseleek"
+            />
+            <div class="info">
+              <h3>Common houseleek</h3>
+            </div>
+            <div class="details">
+              <h4>Common houseleek</h4>
+              <p>
+                Sempervivum tectorum, the common houseleek,is a species of
+                flowering plant in the family Crassulaceae, native to the
+                mountains of southern Europe, cultivated in the whole of Europe
+                for its appearance and a Roman tradition claiming that it
+                protects buildings against lightning strikes.
+              </p>
+              <div class="buy">
+                <div class="cost">
+                  <p>
+                    100
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </p>
+                </div>
+                <div class="cart">
+                  <i class="fa-solid fa-circle-minus minus"></i>
+                  <p class="number">0</p>
+                  <i class="fa-solid fa-circle-plus plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="plants">
+            <img
+              src="https://images.unsplash.com/photo-1508022713622-df2d8fb7b4cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"
+              alt="Zebra haworthia"
+              title="Zebra haworthia"
+            />
+
+            <div class="info">
+              <h3>Zebra haworthia</h3>
+            </div>
+            <div class="details">
+              <h4>Zebra haworthia</h4>
+              <p>
+                Haworthiopsis attenuata, formerly Haworthia attenuata, commonly
+                known as zebra haworthia, is a small species of succulent plant
+                from the Eastern Cape Province, South Africa. As an ornamental,
+                it is one of the most commonly cultivated of the Haworthiopsis
+                species.
+              </p>
+              <div class="buy">
+                <div class="cost">
+                  <p>
+                    200
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </p>
+                </div>
+                <div class="cart">
+                  <i class="fa-solid fa-circle-minus minus"></i>
+                  <p class="number">0</p>
+                  <i class="fa-solid fa-circle-plus plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="plants">
+            <img
+              src="https://images.unsplash.com/photo-1509937528035-ad76254b0356?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDh8fHBsYW50JTIwcG90fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="Jewel Leaf"
+              title="Jewel Leaf"
+            />
+
+            <div class="info">
+              <h3>Jewel Leaf</h3>
+            </div>
+            <div class="details">
+              <h4>Jewel Leaf</h4>
+              <p>
+                Graptopetalum amethystinum, also called jewel-leaf plant, is a
+                plant belonging to the succulent genus Graptopetalum. It is
+                native to Mexico.
+              </p>
+              <div class="buy">
+                <div class="cost">
+                  <p>
+                    150
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </p>
+                </div>
+                <div class="cart">
+                  <i class="fa-solid fa-circle-minus minus"></i>
+                  <p class="number">0</p>
+                  <i class="fa-solid fa-circle-plus plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="plants">
+            <img
+              src="https://images.unsplash.com/photo-1609061801093-1b7a8a574c69?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGxhbnQlMjBwb3R8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+              alt="Mammillaria marcosii"
+              title="Mammillaria marcosii"
+            />
+
+            <div class="info">
+              <h3>Mammillaria marcosii</h3>
+            </div>
+            <div class="details">
+              <h4>Mammillaria marcosii</h4>
+              <p>
+                Mammillaria marcosii is a species of plant in the family
+                Cactaceae. It is endemic to Mexico. Its natural habitat is hot
+                deserts.
+              </p>
+              <div class="buy">
+                <div class="cost">
+                  <p>
+                    300
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </p>
+                </div>
+                <div class="cart">
+                  <i class="fa-solid fa-circle-minus minus"></i>
+                  <p class="number">0</p>
+                  <i class="fa-solid fa-circle-plus plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="plants">
+            <img
+              src="https://images.unsplash.com/photo-1509223197845-458d87318791?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzB8fHBsYW50JTIwcG90fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="Capsicum cardenasii"
+              title="Capsicum cardenasii"
+            />
+
+            <div class="info">
+              <h3>Capsicum cardenasii</h3>
+            </div>
+            <div class="details">
+              <h4>Capsicum cardenasii</h4>
+              <p>
+                Capsicum cardenasii is a plant species in the genus Capsicum and
+                the family Solanaceae. It is a diploid with 2n=2x=24. It is a
+                member within the C. pubescens complex, a group of closely
+                related Capsicum species.
+              </p>
+              <div class="buy">
+                <div class="cost">
+                  <p>
+                    450
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </p>
+                </div>
+                <div class="cart">
+                  <i class="fa-solid fa-circle-minus minus"></i>
+                  <p class="number">0</p>
+                  <i class="fa-solid fa-circle-plus plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="plants">
+            <img
+              src="https://images.unsplash.com/photo-1592744536004-be419c811f4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTF8fHBsYW50JTIwcG90fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt="Astrophytum ornatum"
+              title="Astrophytum ornatum"
+            />
+
+            <div class="info">
+              <h3>Astrophytum ornatum</h3>
+            </div>
+            <div class="details">
+              <h4>Astrophytum ornatum</h4>
+              <p>
+                Astrophytum ornatum, the bishop's cap or monk's hood cactus, is
+                a flowering plant of the family Cactaceae, endemic to the
+                Central Plateau of Mexico. It is the largest and tallest species
+                of Astrophytum.
+              </p>
+              <div class="buy">
+                <div class="cost">
+                  <p>
+                    330
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </p>
+                </div>
+                <div class="cart">
+                  <i class="fa-solid fa-circle-minus minus"></i>
+                  <p class="number">0</p>
+                  <i class="fa-solid fa-circle-plus plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="plants">
+            <img
+              src="https://images.unsplash.com/photo-1509645470620-c9c349934693?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTU0fHxwbGFudCUyMHBvdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              alt="Astrophytum ornatum"
+              title="Astrophytum ornatum"
+            />
+
+            <div class="info">
+              <h3>Astrophytum ornatum</h3>
+            </div>
+            <div class="details">
+              <h4>Astrophytum ornatum</h4>
+              <p>
+                Astrophytum ornatum, the bishop's cap or monk's hood cactus, is
+                a flowering plant of the family Cactaceae, endemic to the
+                Central Plateau of Mexico. It is the largest and tallest species
+                of Astrophytum.
+              </p>
+              <div class="buy">
+                <div class="cost">
+                  <p>
+                    200
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </p>
+                </div>
+                <div class="cart">
+                  <i class="fa-solid fa-circle-minus minus"></i>
+                  <p class="number">0</p>
+                  <i class="fa-solid fa-circle-plus plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="plants">
+            <img
+              src="https://images.unsplash.com/photo-1463154545680-d59320fd685d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTczfHxwbGFudCUyMHBvdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              alt="Astrophytum ornatum"
+              title="Astrophytum ornatum"
+            />
+
+            <div class="info">
+              <h3>Astrophytum ornatum</h3>
+            </div>
+            <div class="details">
+              <h4>Astrophytum ornatum</h4>
+              <p>
+                Astrophytum ornatum, the bishop's cap or monk's hood cactus, is
+                a flowering plant of the family Cactaceae, endemic to the
+                Central Plateau of Mexico. It is the largest and tallest species
+                of Astrophytum.
+              </p>
+              <div class="buy">
+                <div class="cost">
+                  <p>
+                    400
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </p>
+                </div>
+                <div class="cart">
+                  <i class="fa-solid fa-circle-minus minus"></i>
+                  <p class="number">0</p>
+                  <i class="fa-solid fa-circle-plus plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="plants">
+            <img
+              src="https://images.unsplash.com/photo-1509587584298-0f3b3a3a1797?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzY4fHxwbGFudCUyMHBvdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              alt="Astrophytum ornatum"
+              title="Astrophytum ornatum"
+            />
+
+            <div class="info">
+              <h3>Astrophytum ornatum</h3>
+            </div>
+            <div class="details">
+              <h4>Astrophytum ornatum</h4>
+              <p>
+                Astrophytum ornatum, the bishop's cap or monk's hood cactus, is
+                a flowering plant of the family Cactaceae, endemic to the
+                Central Plateau of Mexico. It is the largest and tallest species
+                of Astrophytum.
+              </p>
+              <div class="buy">
+                <div class="cost">
+                  <p>
+                    360
+                    <i class="fa-solid fa-dollar-sign"></i>
+                  </p>
+                </div>
+                <div class="cart">
+                  <i class="fa-solid fa-circle-minus minus"></i>
+                  <p class="number">0</p>
+                  <i class="fa-solid fa-circle-plus plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container"></div> -->
+    <div class="container">
+      <!-- <div class="aboutContainer" id="about"> -->
+        <!-- <h2>About</h2> -->
+      </div>
+
+    </div>
+    <div class="container">
+      <div class="testimonialsContainer" id="testimonials">
+        <h2><a href="" id="testimonials">Testimonials</a></h2>
+        <div class="scrollerContainer">
+          <ul class="numberScroller">
+            <li class="scrollNumber">1</li>
+            <li class="scrollNumber">2</li>
+            <li class="scrollNumber">3</li>
+          </ul>
+          <span class="scrollNumber activeNumber"> / 3</span>
+        </div>
+        <div class="testimonials">
+          <div class="slide">
+            <div class="testimonial">
+              <div class="testimonialImg">
+                <img
+                  src="https://images.unsplash.com/photo-1499887142886-791eca5918cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                  alt=""
+                  class="testimonial__photo"
+                />
+              </div>
+
+              <div class="testimonialText">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusantium quas quisquam non? Quas voluptate nulla minima
+                <h6 class="testimonialName">Maria de Almeida</h6>
+                <p class="testimonialLocation">San Francisco, USA</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="testimonial">
+              <div class="testimonialImg">
+                <img
+                  src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80"
+                  alt=""
+                  class="testimonial__photo"
+                />
+              </div>
+
+              <div class="testimonialText">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusantium quas quisquam non? Quas voluptate nulla minima
+                <h6 class="testimonialName">Maria de Almeida</h6>
+                <p class="testimonialLocation">San Francisco, USA</p>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="testimonial">
+              <div class="testimonialImg">
+                <img
+                  src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+                  alt=""
+                  class="testimonial__photo"
+                />
+              </div>
+
+              <div class="testimonialText">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Accusantium quas quisquam non? Quas voluptate nulla minima
+                <h6 class="testimonialName">Maria de Almeida</h6>
+                <p class="testimonialLocation">San Francisco, USA</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="testimonialsbtn left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="btn-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+
+          <button class="testimonialsbtn right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="btn-icon"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+
+          <div class="dots">
+            <button class="dot dotActive">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container"></div> -->
+  </body>
+  <script>
+    "use strict";
+
+    // Navigating to other sections
+
+    const navLinks = document.querySelectorAll(".navLink");
+
+    navLinks.forEach(function (navLink) {
+      navLink.addEventListener("click", function () {
+        const navigateTo = this.getAttribute("data-navigateto");
+        const navigateToSection = document.getElementById(navigateTo);
+
+        navigateToSection.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      });
+    });
+
+    // sticky navbar
+
+    const navigation = document.querySelector("header");
+
+    window.addEventListener("scroll", function () {
+      navigation.classList.toggle("sticky", window.scrollY > 0);
+    });
+
+    // adding and removing active class to nav links
+
+    const windowHeight = window.innerHeight;
+
+    window.addEventListener("scroll", function () {
+      const sectionIndex = Math.trunc(window.scrollY / windowHeight);
+
+      navLinks.forEach((navLink) => navLink.classList.remove("active"));
+      navLinks[sectionIndex + 1].classList.add("active");
+    });
+
+    // carousel
+
+    const prev = document.querySelector(".prev");
+    const next = document.querySelector(".next");
+
+    prev.addEventListener("click", previousCarousel);
+    next.addEventListener("click", nextCarousel);
+
+    let currentCarousel = 0;
+
+    const carousels = [
+      {
+        mainImg:
+          "https://raw.githubusercontent.com/rishikumarr/images/main/plant-images/alovera.jpg",
+
+        subImgs: [
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-1.png",
+
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-4.png",
+
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-2.png",
+
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-5.png",
+        ],
+      },
+      {
+        mainImg:
+          "https://raw.githubusercontent.com/rishikumarr/images/main/plant-images/cactus-2.jpg",
+
+        subImgs: [
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-3.png",
+
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-one/asset-6.png",
+
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-two/asset-1.png",
+
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-two/asset-4.png",
+        ],
+      },
+      {
+        mainImg:
+          "https://raw.githubusercontent.com/rishikumarr/images/main/plant-images/cactus-1.jpg",
+        subImgs: [
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-two/asset-2.png",
+
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-two/asset-6.png",
+
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-two/asset-3.png",
+
+          "https://raw.githubusercontent.com/rishikumarr/images/main/circle-avatars/set-three/asset-4.png",
+        ],
+      },
+    ];
+
+    const mainImgElement = document.querySelector(".main-img");
+    const userImgs = document.querySelectorAll(".user-img");
+
+    function updateArrow() {
+      if (currentCarousel === 0) {
+        prev.disabled = true;
+      } else if (currentCarousel === carousels.length - 1) {
+        next.disabled = true;
+      } else {
+        prev.disabled = false;
+        next.disabled = false;
+      }
+    }
+
+    function updateImage() {
+      const { mainImg } = carousels[currentCarousel];
+      document.querySelector(".main-img").src = mainImg;
+
+      for (let index = 0; index < userImgs.length; index++) {
+        const imgElement = userImgs[index];
+
+        const imgSource = carousels[currentCarousel]["subImgs"][index];
+
+        imgElement.src = imgSource;
+      }
+    }
+
+    function previousCarousel() {
+      currentCarousel--;
+      updateArrow();
+      updateImage();
+    }
+
+    function nextCarousel() {
+      currentCarousel++;
+      updateArrow();
+      updateImage();
+    }
+
+    // Adding and removing from cart
+
+    const plus = document.querySelectorAll(".plus");
+
+    const minus = document.querySelectorAll(".minus");
+
+    plus.forEach(function (addition) {
+      addition.addEventListener("click", function () {
+        const parent = this.parentNode;
+
+        const value = +parent.querySelector(".number").textContent;
+
+        if (value >= 0)
+          parent.querySelector(".number").textContent = +value + 1;
+      });
+    });
+
+    minus.forEach(function (subtraction) {
+      subtraction.addEventListener("click", function () {
+        const parent = this.parentNode;
+
+        const value = +parent.querySelector(".number").textContent;
+
+        if (value > 0) parent.querySelector(".number").textContent = +value - 1;
+      });
+    });
+
+    // testimonials
+    const slides = document.querySelectorAll(".slide");
+    const btnLeft = document.querySelector(".left");
+    const btnRight = document.querySelector(".right");
+    const dotContainer = document.querySelector(".dots");
+    const scrollerContainer = document.querySelector(".numberScroller");
+    const scroller = document.querySelectorAll(".scrollNumber");
+    const dots = document.querySelectorAll(".dot");
+
+    let currentSlide = 0;
+    const maxSlide = slides.length;
+
+    const scrollerInterval = -100;
+
+    function updateTestimonialSlide(slide) {
+      slides.forEach(
+        (s, i) => (s.style.transform = `translateX(${160 * (i - slide)}%)`)
+      );
+    }
+
+    function updateScroller() {
+      scroller.forEach((s, i) => (s.style.top = `${scrollerInterval * i}%`));
+    }
+
+    function initialCondition() {
+      updateTestimonialSlide(0);
+      updateDot(0);
+      updateScroller(0);
+    }
+    initialCondition();
+
+    function functionality() {
+      btnRight.addEventListener("click", nextTestimonial);
+      btnLeft.addEventListener("click", previousTestimonial);
+    }
+    functionality();
+    function nextTestimonial() {
+      if (currentSlide === maxSlide - 1) {
+        currentSlide = 0;
+      } else {
+        currentSlide++;
+      }
+
+      updateTestimonialSlide(currentSlide);
+      updateDot(currentSlide);
+      updateScroller(currentSlide);
+    }
+
+    function previousTestimonial() {
+      if (currentSlide === 0) {
+        currentSlide = maxSlide - 1;
+      } else {
+        currentSlide--;
+      }
+      updateTestimonialSlide(currentSlide);
+      updateDot(currentSlide);
+      updateScroller(currentSlide);
+    }
+
+    function updateDot(slide) {
+      const dots = document.querySelectorAll(".dot");
+
+      dots.forEach((dot) => dot.classList.remove("dotActive"));
+
+      dots[slide].classList.add("dotActive");
+    }
+
+    dots.forEach(function (dot, currentSlide) {
+      dot.addEventListener("click", function () {
+        removeActive();
+        this.classList.add("dotActive");
+        updateTestimonialSlide(currentSlide);
+        updateDot(currentSlide);
+        updateScroller(currentSlide);
+      });
+    });
+
+    function removeActive() {
+      dots.forEach((d) => d.classList.remove("dotActive"));
+    }
+  </script>
+</html>
